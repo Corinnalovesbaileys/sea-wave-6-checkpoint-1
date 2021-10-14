@@ -1,65 +1,65 @@
 Q: What is the default branch of a git repository called?
-A:
+A: main
 
 Q: How do you change branches using git?
-A:
+A: checkout the branch u want to use
 
 Q: What is the command that allows you to create a local repository from a remote repository?
-A:
+A: git clone URL
 
 Q: How do you check the status of the working directory of the local repository?
-A:
+A: git status
 
 Q: What sequence of commands allows me to share new changes in a local repository with an (already configured) remote repository?
-A:
+A: commit and push (if files were local added they also need to be added before commit and push)
 
 Q: What is the value of the expression (true && false)?
-A:
+A: false
 
 Q: How can you write `i = i + 1` more concisely?
-A:
+A: i++
 
 Q: What does the term "concatenation" mean?
-A:
+A: bring together
 
 Q: Why is the check for "equals" with (object == object) not reliable? What should you use for check of equal objects?
-A:
+A: It`s not specified which type is used so they are not comparable. For the check you should use the specific equal-Method of the class eg. from type String
 
 Q: What Collection implementation is ordered, but not sorted?
-A:
+A: Map
 
 Q: What Collection implementation has only unique elements?
-A:
+A: Set
 
 Q: How can we find out the number of elements of an array named "students"?
-A:
+A: students.size()
 
 Q: How can we find out the number of elements of a list named "students"?
-A:
+A: students.getSize() ---- ??? denke eher nicht aber keine Ahnung ohne IDE ist doof.
 
 Q: In Java, what happens if I divide by Zero (eg. 8 / 0)?
-A:
+A: Error
 
 Q: How can you check if File quiz = new File("quiz.txt") exists?
-A:
+A: quiz.exists()
 
 Q: Depending on some attributes, an object should return isAllowed(). Should the method be static or not, why?
-A:
+A: If the attributes are always the same, the method should be static
 
 Q: What is the signature of the `main` method of a class?
-A:
+A: public static void main (String args[]) --- was war nochmal die Signatur?
 
 Q: What is an instance of a class?
-A:
+A: An object, a bertha or elfriede are instances of the Class Cow
 
 Q: Which naming rule should you apply to the naming of a class?
-A:
+A: First letter Big, then camelcase
 
 Q: Why should the usage of java.util.Date be avoided?
-A:
+A: because it can be overwritten (mutable)
 
 Q: What Java class do you use to store the Date "31.10.2021"?
-A:
+A: Date
 
 Q: What is the advantage of using Generics?
-A:
+A: Cast can be avoided.
