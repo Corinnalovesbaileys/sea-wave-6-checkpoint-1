@@ -8,20 +8,20 @@ public class GenericStorage<T> {
     // which can be generified with ITPerson, so that this is possible:
     //List<ITPerson> itcrowd = new ArrayList<>();
 
-    List<ITPerson> itcrowd = new ArrayList<>();
+    List<T> itcrowd = new ArrayList<>();
 
     public GenericStorage() {
 
     }
 
-    public boolean storePerson(ITPerson person) {
+    public boolean storePerson(T person) {
         return itcrowd.add(person);
     }
-    public ITPerson getLastStoredPerson() {
+    public T getLastStoredPerson() {
         return itcrowd.get(itcrowd.size()-1);
     }
 
-    public ITPerson getFirstStoredPerson() {
+    public T getFirstStoredPerson() {
         return itcrowd.get(0);
     }
 }
