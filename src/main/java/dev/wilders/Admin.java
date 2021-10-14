@@ -25,8 +25,7 @@ public class Admin extends ITPerson {
     public boolean hasWriteAccess() {
         // Add logic to evaluate Write access for Admin here.
         LocalDate lastCertificationOneYearAgo = LocalDate.now().minusYears(1);
-        System.out.println(lastCertified);
-        System.out.println(lastCertificationOneYearAgo);
+
         if (lastCertified.isAfter(lastCertificationOneYearAgo)) {
             return true;
         } else return false;

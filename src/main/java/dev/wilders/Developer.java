@@ -14,12 +14,17 @@ public class Developer extends ITPerson {
     @Override
     public boolean hasReadAccess() {
         // Add logic to evaluate Read access for Developer here.
-        return false;
+        return true;
     }
 
     @Override
     public boolean hasWriteAccess() {
         // Add logic to evaluate Write access for Developer here.
-        return false;
+        LocalDate trialPeriodOver = LocalDate.now().minusMonths(6);
+
+        if (trialPeriodOver.isAfter(employmentDate)) {
+            return true;
+        } else return false;
     }
+
 }
