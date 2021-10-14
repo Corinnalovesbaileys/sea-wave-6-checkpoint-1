@@ -3,7 +3,7 @@ package dev.wilders;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GenericStorage<ITPerson> {
+public class GenericStorage<T> {
     // and can only add ITPerson or subclasses of it. See ITPersonStorage and create a new class GenericStorage,
     // which can be generified with ITPerson, so that this is possible:
     //List<ITPerson> itcrowd = new ArrayList<>();
